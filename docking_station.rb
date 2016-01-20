@@ -1,1 +1,0 @@
-docking_station = Docking_station.new
