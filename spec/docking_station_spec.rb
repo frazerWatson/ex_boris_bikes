@@ -7,8 +7,18 @@ require 'docking_station'
 		it 'releases working bikes' do
 		bike = subject.release_bike
 		expect(bike).to be_working
-	end
+		end
 
+		docking = DockingStation.new
+		bike = Bike.new
+
+		it 'responds to dock' do 
+		expect(docking.dock_bike(bike))
+		end
+
+		it 'sees a docked bike' do
+		expect(docking.view_bike)
+		end
 	end
 
 
