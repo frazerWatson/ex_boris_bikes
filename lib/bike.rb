@@ -4,8 +4,6 @@ class Bike
   	return true
   end
 
-  def dock_bike
 
-  end
   
 end

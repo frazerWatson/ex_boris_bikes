@@ -2,19 +2,19 @@ require_relative 'bike'
 #require needs you to have a full path name,
 #relative allows you to do a 
 class DockingStation
-	
-	attr_reader :dock_bike
+
+	attr_reader :bike
 
   def release_bike
- 	 Bike.new
+ 	Bike.new
   end
 
-  def dock_bike(bike)
-  	@dock_bike = bike
+  def dock(bike)
+  	@bike = bike
   end
 
-  def view_bike
-  	@dock_bike
-  end
+  # def bike
+  # @bike
+  # end
 
 end
